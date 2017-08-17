@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}博文展示{% endblock %}
+
+{% block content %}
+    {% for article in article_list %}
+        <div class="media">
+          <div class="media-left">
+            <a href="{% url 'detail_archive' article.id %}">
+              <img class="media-object" src="{{ article.cover.url }}" alt="..." width="150px" height="100px">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">{{ article.headline }}</h4>
+            <h5>{{ article.abstract }}</h5>
+            <span class="label label-info">作者：{{ article.reporter.full_name }}</span>
+            <span class="label label-info">发布时间：{{ article.pub_date|date:'Y-m-d h:m:s'}}</span>
+          </div>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="apg_ubuntu">
+    <serverData>
+      <paths name="apg_ubuntu">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/WebDjango" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

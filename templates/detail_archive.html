@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load mytags %}
+
+{% block title %}{% settings_value "SITE_NAME" %}{{ article_detail.headline }}{% endblock %}
+{% block content %}
+    <ol class="breadcrumb">
+      <li><a href="{% url 'index' %}">首页</a></li>
+      <li><a href="{% url 'blogs' %}">博文</a></li>
+      <li class="active">{{ article_detail.headline }}</li>
+    </ol>
+    <h3>{{ article_detail.content }}</h3>
+{% endblock %}

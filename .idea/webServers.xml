@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="89f315fe-690c-45f2-bc70-5d8fe5663e77" name="apg_ubuntu" url="http://apg-ubuntu">
+        <fileTransfer host="apg-ubuntu" port="22" rootFolder="/home/apg" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

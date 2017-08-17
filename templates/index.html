@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}查看文章{% endblock %}
+{% block imax %}
+    <div class="col-xs-12">
+       <div class="jumbotron">
+          <h1>Hello, world!</h1>
+          <p>简单的使用Django+bootstrap的博客系统</p>
+       </div>
+   </div>
+{% endblock %}
+{% block content %}
+    <h1>文章日期</h1>
+    {% for key,value in column_list.items %}
+        <a href="{{ value }}">{{ key }}</a>
+    {% endfor %}
+{% endblock %}
